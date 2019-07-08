@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+  xmlns:gap   = "http://phonegap.com/ns/1.0"
+  id          = "com.chili.healthy" 
+  versionCode = "10"
+  version     = "1.9.9" >
+  
+  <!-- versionCode is optional and Android only -->
+  
+  <name>Chili Healthy</name>
+  <platform name="android">
+    <icon src="res/images/icon/ldpi.png" density="ldpi"/>
+    <icon src="res/images/icon/mdpi.png" density="mdpi"/>
+  </platform>
+
+  <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="true" />
+  <preference name="KeepRunning" value="false"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="ShowSplashScreenSpinner" value="false"/>
+  <preference name="android-build-tool" value="gradle" />  
+  
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
+
+  <splash src="res/images/splash/ldpi.png" platform="android" qualifier="ldpi"/>
+  <splash src="res/images/splash/mdpi.png" platform="android" qualifier="mdpi"/>
+
+  <plugin name="cordova-plugin-inappbrowser"/>
+  <plugin name="cordova-plugin-whitelist" version="1"/>
+
+  <access origin="*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-navigation href="https://*/*"/>
+  
+  <description>
+    Aplikasi Pendeteksi Penyakit Tanaman Cabai.
+  </description>
+  
+  <author href="https://www.chili-health.com" email="teamchili@gmail.com">
+    Chili Healthy
+  </author>
+  
+</widget>
